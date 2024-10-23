@@ -19,3 +19,11 @@ plt.show()
 # histogram
 sns.histplot(tips['total_bill'], kde=True)  # KDE shows the data's probability density
 plt.show()
+
+
+# skilearn datasets
+from sklearn.datasets import fetch_california_housing
+housing = fetch_california_housing()
+
+house = pd.DataFrame(housing.data, columns = housing.feature_names)
+print(house.head())
