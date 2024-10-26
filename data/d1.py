@@ -5,3 +5,4 @@ import matplotlib.pyplot as plt
 # importing dataset
 iris = pd.read_csv('dataset\iris\iris.csv')
 print(iris)
+print(iris.head())
